@@ -1,0 +1,40 @@
+---
+title: "Présentation SHIBA"
+Subtitle : 
+author: "Shiny Bayesian Analysis"
+format: 
+  revealjs:
+    theme: [dark]
+editor: visual
+page-layout: full
+institute: "CHU de Strasbourg/Équipe Icube"
+incremental: false
+slide-number: h/v
+footer: ""
+show-slide-number: all
+self-contained: false
+---
+
+# SHIBA
+
+-   Package ![](images/logo.jpg){style="vertical-align:middle" width="66" height="60"} combinant
+
+-   Combinant ![](images/shiny.png){width="52" style="vertical-align:middle"} et ![](images/stan_logo.png){width="60" style="vertical-align:middle"} (STAN)
+
+-   Basé sur ![](images/golem.png){width="53" height="60" style="vertical-align:middle"}
+
+-   Pour faciliter les analyses statistiques **Bayésiennes**
+
+-   License CC-by-nc 4.0 ![](images/by-nc.eu.png){width="115" style="vertical-align:middle"}
+
+## Disponible sur Github
+
+> <https://github.com/GMRC-HUS/ShiBA>
+
+Site d'aide : [gmrc-hus.github.io/ShiBA/](gmrc-hus.github.io/ShiBA/)
+
+![](images/25231.png){width="30"}
+
+------------------------------------------------------------------------
+
+{{< video https://youtu.be/fZEb89V2YBc  height= "100%"  width= "100%" >}}
