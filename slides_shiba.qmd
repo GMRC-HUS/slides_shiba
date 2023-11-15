@@ -1,31 +1,65 @@
 ---
-title: "Présentation SHIBA"
-Subtitle : 
-author: "Shiny Bayesian Analysis"
-format: 
-  revealjs:
-    theme: [dark]
+title: "ShiBA"
+subtitle: "Shiny Bayesian Analysis"
+format:
+  revealjs: 
+    theme: simple
+    logo: images/shiba_def.png
+    css: logo.css
+    slide-number: true
+    include-in-header: clen_title.html
+  beamer : 
+    section-titles: false
+    slide-level : 3
+    slide-number: true
+              
 editor: visual
 page-layout: full
-institute: "CHU de Strasbourg/Équipe Icube"
-incremental: false
+#author: "Thibaut FABACHER"
+institute: |
+   Equipe ICube \
+   CHU de Strasbourg 
+title-slide-attributes: 
+      data-background-image: images/Image1.png
+      data-background-size: 100%
+      data-background-position: 2% 2%   
+
 slide-number: h/v
-footer: ""
+progress: true
+footer: "Thibaut FABACHER"
 show-slide-number: all
-self-contained: false
+jupyter: false
+cap-location: bottom
+self-contained: true
+execute:
+  echo: true
 ---
 
 # SHIBA
 
--   Package ![](images/logo.jpg){style="vertical-align:middle" width="66" height="60"} combinant
+::: columns
+::: {.column width="70%"}
+-   Package ![](images/logo.jpg){style="vertical-align:middle"
+    width="66" height="60"}
 
--   Combinant ![](images/shiny.png){width="52" style="vertical-align:middle"} et ![](images/stan_logo.png){width="60" style="vertical-align:middle"} (STAN)
+-   Combinant ![](images/shiny.png){width="52"
+    style="vertical-align:middle"} et
+    ![](images/stan_logo.png){width="60" style="vertical-align:middle"}
+    (STAN)
 
--   Basé sur ![](images/golem.png){width="53" height="60" style="vertical-align:middle"}
+-   Basé sur ![](images/golem.png){width="53" height="60"
+    style="vertical-align:middle"}
 
 -   Pour faciliter les analyses statistiques **Bayésiennes**
 
--   License CC-by-nc 4.0 ![](images/by-nc.eu.png){width="115" style="vertical-align:middle"}
+-   License CC-by-nc 4.0 ![](images/by-nc.eu.png){width="115"
+    style="vertical-align:middle"}
+:::
+
+::: {.column width="30%"}
+![](images/hex.png)
+:::
+:::
 
 ## Disponible sur Github
 
@@ -37,4 +71,17 @@ Site d'aide : [gmrc-hus.github.io/ShiBA/](gmrc-hus.github.io/ShiBA/)
 
 ------------------------------------------------------------------------
 
-{{< video https://youtu.be/fZEb89V2YBc  height= "100%"  width= "100%" >}}
+![](images/site_aide.png)
+
+------------------------------------------------------------------------
+
+## Import d'une base de donnée
+
+```{r include =FALSE}
+#{{< video https://youtu.be/fZEb89V2YBc height= "100%" width= "100%" >}}
+
+```
+
+------------------------------------------------------------------------
+
+![](gif/import base2.gif){width="100%"}
