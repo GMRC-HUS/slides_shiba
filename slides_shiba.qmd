@@ -12,7 +12,7 @@ format:
     section-titles: false
     slide-level : 3
     slide-number: true
-              
+bibliography: references.bib
 editor: visual
 page-layout: full
 #author: "Thibaut FABACHER"
@@ -20,10 +20,9 @@ institute: |
    Equipe ICube \
    CHU de Strasbourg 
 title-slide-attributes: 
-      data-background-image: images/Image1.png
-      data-background-size: 100%
-      data-background-position: 2% 2%   
-
+      data-background-image: images/HUS-logo.png ,images/icube.png, images/medecine.png 
+      data-background-size: 10% ,10% , 10% 
+      data-background-position: 25% 75%,50% 75%, 75% 75% 
 slide-number: h/v
 progress: true
 footer: "Thibaut FABACHER"
@@ -38,17 +37,17 @@ execute:
 # SHIBA
 
 ::: columns
-::: {.column width="70%"}
+::: {.column width="80%"}
 -   Package ![](images/logo.jpg){style="vertical-align:middle"
-    width="66" height="60"}
+    width="66" height="60"}[@r-cit]
 
 -   Combinant ![](images/shiny.png){width="52"
-    style="vertical-align:middle"} et
+    style="vertical-align:middle"}[@shiny] et
     ![](images/stan_logo.png){width="60" style="vertical-align:middle"}
-    (STAN)
+    (STAN) [@rstan-2]
 
 -   Basé sur ![](images/golem.png){width="53" height="60"
-    style="vertical-align:middle"}
+    style="vertical-align:middle"}[@golem]
 
 -   Pour faciliter les analyses statistiques **Bayésiennes**
 
@@ -56,8 +55,25 @@ execute:
     style="vertical-align:middle"}
 :::
 
-::: {.column width="30%"}
+::: {.column width="20%"}
 ![](images/hex.png)
+:::
+:::
+
+## But :
+
+::: columns
+::: {.column width="30%"}
+![](images/bayes.png){width="82%"}
+:::
+
+::: {.column width="70%"}
+-   Statistique bayésienne *no-code*
+
+-   faciliter l'utilisation de ces approches pour les
+    médecins-chercheurs
+
+-   diffuser les méthodes bayésiennes
 :::
 :::
 
@@ -69,19 +85,50 @@ Site d'aide : [gmrc-hus.github.io/ShiBA/](gmrc-hus.github.io/ShiBA/)
 
 ![](images/25231.png){width="30"}
 
-------------------------------------------------------------------------
+## Github
 
-![](images/site_aide.png)
+<div>
 
-------------------------------------------------------------------------
+[![https://github.com/GMRC-HUS/ShiBA](images/github.png)](https://github.com/GMRC-HUS/ShiBA)
 
-## Import d'une base de donnée
+</div>
 
-```{r include =FALSE}
-#{{< video https://youtu.be/fZEb89V2YBc height= "100%" width= "100%" >}}
+## Installation simple
 
+Dépendant du logiciel ![](images/logo.jpg){style="vertical-align:middle"
+width="66" height="60"}
+
+``` {.r code-line-numbers="2|4|"}
+
+remotes::install_github("https://github.com/GMRC-HUS/ShiBA")
+
+ShiBA::run_app(options = list(launch.browser = TRUE))
 ```
 
-------------------------------------------------------------------------
+## Site d'aide
 
-![](gif/import base2.gif){width="100%"}
+<div>
+
+[![gmrc-hus.github.io/ShiBA/](images/site_aide.png)](gmrc-hus.github.io/ShiBA/)
+
+</div>
+
+## Application
+
+<div>
+
+[![](images/appli.png)](http://127.0.0.1:8100/)
+
+</div>
+
+## Perspectives
+
+- Maintenir le package (corriger les bugs)
+
+- Rajouter des représentations graphiques
+
+- Rajouter des modèles (V2)
+
+
+
+## Référence
